@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <a href = "/">Return home</a>
+    </header>
+    <h2>Submit a recipe</h2>
+    Add recipe details below:
+    <form action="/read" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input name = "name" type = "text"></td>
+            </tr>
+            <tr>
+                <td>Ingredients</td>
+                <td><input name = "ingredients" type = "text"></td>
+            </tr>
+            <tr>
+                <td>Instructions</td>
+                <td><input name = "instructions" type = "text"></td>
+            </tr>
+            <tr>
+                <td>Cooking time</td>
+                <td><input name = "cooking_time" type = "rext"></td>
+            </tr>
+            <tr>
+                <td>Serving size</td>
+                <td><input name = "serving_size" type = "text"></td>
+            </tr>
+            <tr>
+                <td>User ID</td>
+                <td><input name = "user_id" type = "number"></td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td><input name = "category" type = "text"></td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td><input name="image" type="file"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button>Submit</button></td>
+            </tr>           
+        </table>
+    </form>
+
+    <h2>Leave a comment</h2>
+    Add comment details below:
+    <form action = "/comment_sub" method= "post">
+        <table>
+            <tr>
+                <td>Recipe ID</td>
+                <td><input name = "recipe_id" type = "number"></td>
+            </tr>
+            <tr>
+                <td>User ID</td>
+                <td><input name = "user_id" type = "text"></td>
+            </tr>
+            <tr>
+                <td>comment</td>
+                <td><input name = "comment" type = "text"></td>
+            </tr>
+            <tr>
+                <td>date posted</td>
+                <td><input name = "date_posted" type = "text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button>Submit</button></td>
+            </tr>           
+        </table>
+    </form>
+</body>
+</html>

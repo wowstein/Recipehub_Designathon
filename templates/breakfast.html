@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Breakfast</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h2>Breakfast recipes</h2>
+    Below are the breakfast recipes in the DB: 
+    <br></br>
+    <table  border = "1 px">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>name</th>
+                <th>ingredients</th>
+                <th>instructions</th>
+                <th>cooking_time</th>
+                <th>serving_size</th>
+                <th>user_id</th>
+                <th>category</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in sqldata %}
+            <tr>
+                <td>{{i[0]}}</td>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                <td>{{i[4]}}</td>
+                <td>{{i[5]}}</td>
+                <td>{{i[6]}}</td>
+                <td>{{i[7]}}</td>               
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>    
+</body>
+</html>

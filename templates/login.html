@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log In</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <a href = "/new_user">Register user</a>
+    </header>
+    <form action="/sample" method="post">
+        <h2>User Login</h2>
+        <label>User Name</label>
+        <input name="textbox1" type = "text" placeholder = "User Name"> 
+        <br><br> 
+        <label>Password</label>
+        <input name="textbox2" type = "password" placeholder = "Password">
+        <br><br>
+        <button>Log In</button>{{msg}}
+    </form>
+  
+</body>
+</html>

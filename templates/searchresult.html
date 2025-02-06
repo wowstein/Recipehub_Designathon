@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recipes Matched</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <a href = "/login">Submit recipes</a>
+        <a href = "/login">Leave a comment</a>
+    </header>
+    {% if recipe %}
+        {% for r in recipe %}
+            <h1>{{ r.name }}</h1>
+            <h2>Ingredients</h2>
+            <p>{{ r.ingredients }}</p>
+            
+            <h2>Instructions</h2>
+            <p>{{ r.instructions }}</p>
+            
+            {% if r.image %}
+            <img src="{{ url_for('static', filename='uploads/' + r.image) }}" alt="Recipe Image">
+            {% endif %}
+            
+            <h1>Comments</h1>
+            <div id="comments">
+                {% if comments %}
+                    {% for comment in comments %}
+                        <div class="comment">
+                            <p><strong>{{ comment.username }}</strong></p>
+                            <p>{{ comment.comment }}</p>
+                            <p><em>{{ comment.date_posted }}</em></p>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p>No comments found.</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Recipe not found.</p>
+    {% endif %}
+</body>
+</html>

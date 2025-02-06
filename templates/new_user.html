@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New User Registration</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <a href = "/">Return home</a>
+        <a href = "/login">Login</a>
+    </header>
+    <h2>New User Registration</h2>
+    <form action="/user_reg" method="post">
+        <h3>User Login</h3>
+        <label>Unique ID</label>
+        <input name="id" type = "text" placeholder = "ID"> 
+        <br><br> 
+        <label>User Name</label>
+        <input name="username" type = "text" placeholder = "Username">
+        <br><br>
+        <label>Email ID</label>
+        <input name="email" type = "text" placeholder = "Email ID">
+        <br><br>
+        <label>Password</label>
+        <input name="password" type = "password" placeholder = "Password">
+        <br><br>
+        <button>Register</button>{{msg}}
+    </form>
+</body>
+</html>
