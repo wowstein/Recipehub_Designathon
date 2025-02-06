@@ -1,0 +1,38 @@
+/* static/css/styles.css */
+@font-face {
+    font-family: 'Angelos';
+    src: url('/static/fonts/Angelos.ttf') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/images/background.jpg'); /* Specify the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.recipe-title {
+    text-align: center;
+    font-family: 'Angelos', cursive;
+}
+
+.center-title {
+    text-align: center;
+}
+.link-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+header a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+header a:hover {
+    text-decoration: underline;
+}
