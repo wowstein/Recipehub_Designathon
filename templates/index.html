@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Recipe Hub</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
@@ -7,60 +8,64 @@
 
 
 <body>
-    <header>
-        <a href = "/new_user">Register user</a>
-        <a href = "/login">Submit recipes</a>
-    </header>
-    
-    <!-- Centered Title -->
-    <h1 class="recipe-title">RecipeHub</h1>
-    <h2 class="center-title">Categories</h2>
+    <main id="container">
+        <header>
+            <a href="/new_user">Register user</a>
+            <a href="/login">Submit recipes</a>
+        </header>
 
-    <div class="link-container">
-        <a href="/breakfast">Breakfast</a>
-        <a href="/lunch">Lunch</a>
-        <a href="/dinner">Dinner</a>
-        <a href="/desserts">Desserts</a>
-    </div>
-    <h2>Search</h2>
-    <form action = "/searchresult" method = "post"> 
-        <table>
-            <tr>
-                <td>Name of the recipe</td>
-                <td><input name = "name_rcp" type = "text" ></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><button>Search</button></td>
-            </tr>
-        </table>
-    </form>  
-    <form action = "/ingredientsearchresult" method = "post"> 
-        <table>
-            <tr>
-                <td>ingredient in the recipe</td>
-                <td><input name = "ing_rcp" type = "text" ></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><button>Search</button></td>
-            </tr>
-        </table>
-    </form>
-    
-    <h2>Featured Recipes</h2>
-    <h3>
-        <a href="/pancake">Banana Pancake</a>
-    </h3>
-    <h4>Description:</h4>
-    <p>A tasty begining to a fantastic day.</p>
-    <img src="{{ url_for('static', filename='images/banana_pancake.jpeg') }}" alt="Soft and moist...">
-    <h3>
-        <a href="/vada">Vada</a>
-    </h3>
-    <h4>Description:</h4>
-    <p>Crunchy on the outside....tender inside....</p>
-    <img src="{{ url_for('static', filename='images/Vada.jpeg') }}" alt="Legendary and delicious...">
-   
+        <div id="content">
+            <!-- Centered Title -->
+            <h1 class="recipe-title">RecipeHub</h1>
+            <h2 class="center-title">Categories</h2>
+
+            <div class="link-container">
+                <a href="/breakfast">Breakfast</a>
+                <a href="/lunch">Lunch</a>
+                <a href="/dinner">Dinner</a>
+                <a href="/desserts">Desserts</a>
+            </div>
+            <h2>Search</h2>
+            <form action="/searchresult" method="post">
+                <table>
+                    <tr>
+                        <td>Name of the recipe</td>
+                        <td><input name="name_rcp" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button>Search</button></td>
+                    </tr>
+                </table>
+            </form>
+            <form action="/ingredientsearchresult" method="post">
+                <table>
+                    <tr>
+                        <td>ingredient in the recipe</td>
+                        <td><input name="ing_rcp" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button>Search</button></td>
+                    </tr>
+                </table>
+            </form>
+
+            <h2>Featured Recipes</h2>
+            <h3>
+                <a href="/pancake">Banana Pancake</a>
+            </h3>
+            <h4>Description:</h4>
+            <p>A tasty begining to a fantastic day.</p>
+            <img src="{{ url_for('static', filename='images/banana_pancake.jpeg') }}" alt="Soft and moist...">
+            <h3>
+                <a href="/vada">Vada</a>
+            </h3>
+            <h4>Description:</h4>
+            <p>Crunchy on the outside....tender inside....</p>
+            <img src="{{ url_for('static', filename='images/Vada.jpeg') }}" alt="Legendary and delicious...">
+        </div>
+    </main>
 </body>
+
 </html>

@@ -15,6 +15,10 @@ body {
     background-position: center;
 }
 
+body main {
+    padding: 1rem;
+}
+
 .recipe-title {
     text-align: center;
     font-family: 'Angelos', cursive;
