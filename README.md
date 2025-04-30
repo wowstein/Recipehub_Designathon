@@ -21,7 +21,7 @@ The website is powered by a MySQL database, ensuring secure and efficient storag
 
 <p align="center">
 Website Demo: <br/>
-<img src="https://github.com/wowstein/Recipehub_Designathon/blob/main/screenshots/Home%20page.gif" alt="Website Demo" />
+<img src="https://github.com/wowstein/Recipehub_Designathon/blob/main/screenshots/RH%20homepage.gif" />
 <br/>
 </p>
 
