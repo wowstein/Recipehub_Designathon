@@ -17,7 +17,7 @@ The website is powered by a MySQL database, ensuring secure and efficient storag
 
 <h2>Screenshots:</h2>
 
-<h3>Below is a demonstration of the website in action: </h3>
+<h4>Below is a demonstration of the website in action: </h4>
 
 <p align="center">
 Website Demo: <br/>
