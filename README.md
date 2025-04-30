@@ -19,7 +19,7 @@ The website is powered by a MySQL database, ensuring secure and efficient storag
 
 Below is a demonstration of the website in action:
 
-![Homepage](screenshots/Home page.gif)
+![Homepage]([screenshots/Home page.gif](https://github.com/wowstein/Recipehub_Designathon/blob/main/screenshots/Home%20page.gif))
 
 
 <!--
