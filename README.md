@@ -16,6 +16,12 @@ The website is powered by a MySQL database, ensuring secure and efficient storag
 - <b>VS Code</b> 
 
 <h2>Screenshots:</h2>
+
+Below is a demonstration of the website in action:
+
+![Homepage](screenshots/Home page.gif)
+
+
 <!--
 <p align="center">
 Happy : <br/>
