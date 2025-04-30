@@ -15,8 +15,8 @@ The website is powered by a MySQL database, ensuring secure and efficient storag
 
 - <b>VS Code</b> 
 
-<h2>Screenshots of extracted clips:</h2>
-
+<h2>Screenshots:</h2>
+<!--
 <p align="center">
 Happy : <br/>
 <img src="https://github.com/wowstein/Football-Event-Extraction/assets/142371525/855f4d5d-6fcc-464f-a258-c1cc45c9fd23"/>
@@ -27,6 +27,7 @@ Goal:  <br/>
 <br />
 <br />
 </p>
+--!>
 
 <!--
  ```diff
